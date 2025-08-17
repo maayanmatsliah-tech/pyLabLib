@@ -45,6 +45,8 @@
 ..\pylablib\devices\SmarAct\SCU3DControl_lib.py
 ..\pylablib\devices\SmarAct\SmarActControl_defs.py
 ..\pylablib\devices\SmarAct\SmarActControl_lib.py
+..\pylablib\devices\Teledyne\SpinnakerC_defs.py
+..\pylablib\devices\Teledyne\SpinnakerC_lib.py
 ..\pylablib\devices\Thorlabs\tl_camera_sdk_defs.py
 ..\pylablib\devices\Thorlabs\tl_camera_sdk_lib.py
 ..\pylablib\devices\uc480\uc480_defs.py
@@ -56,3 +58,4 @@
 ..\pylablib\devices\IMAQdx\utils.c
 ..\pylablib\devices\PCO\utils.c
 ..\pylablib\devices\SiliconSoftware\utils.c
+..\pylablib\devices\Teledyne\utils.c

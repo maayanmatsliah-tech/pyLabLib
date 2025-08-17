@@ -27,6 +27,7 @@ Currently supported cameras:
     Picam
     Pvcam
     SiliconSoftware
+    Teledyne
     Thorlabs_TLCamera
     uc480
     Mightex

@@ -53,6 +53,7 @@ Subpackages
    pylablib.devices.SmarAct
    pylablib.devices.Standa
    pylablib.devices.Tektronix
+   pylablib.devices.Teledyne
    pylablib.devices.Thorlabs
    pylablib.devices.Toptica
    pylablib.devices.Trinamic
