@@ -5,7 +5,7 @@
     "distutils": {
         "name": "pylablib.devices.IMAQdx.utils",
         "sources": [
-            "Z:\\Users\\ashkari\\Code\\v1\\pylablib\\devices\\IMAQdx\\utils.pyx"
+            "C:\\Temp\\cython\\pylablib\\devices\\IMAQdx\\utils.pyx"
         ]
     },
     "module_name": "pylablib.devices.IMAQdx.utils"
@@ -2858,7 +2858,15 @@ static int __Pyx_InitConstants(__pyx_mstatetype *__pyx_mstate) {
   CYTHON_UNUSED_VAR(__pyx_mstate);
   {
     const struct { const unsigned int length: 5; } index[] = {{1},{9},{20},{18},{18},{8},{12},{13},{5},{8},{10},{8},{29},{12},{12},{10},{8},{6},{11}};
-    #if (CYTHON_COMPRESS_STRINGS) != 0 /* compression: zlib (170 bytes) */
+    #if (CYTHON_COMPRESS_STRINGS) == 3 && __PYX_LIMITED_VERSION_HEX >= 0x030e0000 /* compression: zstd (170 bytes) */
+const char* const cstring = "(\265/\375 \332\r\005\000r\013#\036\240\253\003\377\377?\3169\330\334\266\346\333\357\377\272\255\354\336\t\375\371\256$\203Q\365\340m\005\013Wp\303&\004\035\240\321\255\022^\177\323\355\277e\205\317:\275\264\227\376\022\326\352\177\230\263\024\310\361\350F\276\326y\r\313\006\312\214\372W\202\363\377WVg\222\376\1772\224~*m\363)K\t\343{\241?\316\372\374Q\204\315Fh\365'\177'\313Hwr\327\311\232\342\2338\316\214\302g\231\3066yG6\260L\371\261\214zTrW\"\006\000Xe\315t\312q\314\205W\325\0007/\023p\353";
+    PyObject *data = __Pyx_DecompressString(cstring, 170, 3);
+    if (unlikely(!data)) __PYX_ERR(0, 1, __pyx_L1_error)
+    const char* const bytes = __Pyx_PyBytes_AsString(data);
+    #if !CYTHON_ASSUME_SAFE_MACROS
+    if (likely(bytes)); else { Py_DECREF(data); __PYX_ERR(0, 1, __pyx_L1_error) }
+    #endif
+    #elif (CYTHON_COMPRESS_STRINGS) != 0 /* compression: zlib (170 bytes) */
 const char* const cstring = "x\332=\216\261\n\002A\014D\021\354\374\227\355\255D\260\261PN\177`\310\345\242,\346\366\324\354\036w\235\245\245\237\347\347\030=0\305\344\021f\310\254J\216j\341:\016@\345R\215\233\310\031{\031\362QNdc\342\330\005\356\356\235\033\223\030\253+bB\276\023KM|\001N%1p\226\014&\325\337-\032\376\231\230\2455\240%O\371\264]ST\276\224\250\365}\035\225j\215uh\244\217,\026\266\273\365\241\031\302\257\030p+\244\223\0210\1771\261S\343\365\212f \213\271\366\244E\3541{\317\027\317\345k\375:|\000@}V\236";
     PyObject *data = __Pyx_DecompressString(cstring, 170, 1);
     if (unlikely(!data)) __PYX_ERR(0, 1, __pyx_L1_error)

@@ -6,7 +6,7 @@
         "depends": [],
         "name": "pylablib.devices.Teledyne.utils",
         "sources": [
-            "Z:\\Users\\ashkari\\Code\\v1\\pylablib\\devices\\Teledyne\\utils.pyx"
+            "C:\\Temp\\cython\\pylablib\\devices\\Teledyne\\utils.pyx"
         ]
     },
     "module_name": "pylablib.devices.Teledyne.utils"
@@ -3453,7 +3453,15 @@ static int __Pyx_InitConstants(__pyx_mstatetype *__pyx_mstate) {
   CYTHON_UNUSED_VAR(__pyx_mstate);
   {
     const struct { const unsigned int length: 5; } index[] = {{1},{9},{20},{18},{18},{8},{12},{13},{5},{8},{10},{8},{31},{12},{12},{10},{8},{6},{11}};
-    #if (CYTHON_COMPRESS_STRINGS) != 0 /* compression: zlib (167 bytes) */
+    #if (CYTHON_COMPRESS_STRINGS) == 3 && __PYX_LIMITED_VERSION_HEX >= 0x030e0000 /* compression: zstd (169 bytes) */
+const char* const cstring = "(\265/\375 \334\005\005\000\222\313\"\035\240\253\003\377\377?\3169\330\334\266\346\333\357\373\202\255\354\336\311\252\035\342\205^\177\325o1\ngp\304&\004\035\240I\235\374\256\277\245\366\337<\337\243N\253l\225?\277Y\375\203\306\314QVf\220\n\367Rgh\226\233\307\031\365\253\364\342\377+Og\222\376?\356\223~)i\357\3452?\370V\350\207q>\177\004_\243\360Y\375\270\327\270\014\245\306\3559Y\023\034\246\2051\223\357\321\2451E\336p\017,K~,\243\006\311\333\263\010\006\000Ze\355tJz\314\205W\325\0007/\023p\353";
+    PyObject *data = __Pyx_DecompressString(cstring, 169, 3);
+    if (unlikely(!data)) __PYX_ERR(0, 1, __pyx_L1_error)
+    const char* const bytes = __Pyx_PyBytes_AsString(data);
+    #if !CYTHON_ASSUME_SAFE_MACROS
+    if (likely(bytes)); else { Py_DECREF(data); __PYX_ERR(0, 1, __pyx_L1_error) }
+    #endif
+    #elif (CYTHON_COMPRESS_STRINGS) != 0 /* compression: zlib (167 bytes) */
 const char* const cstring = "x\332=\216\261\n\002A\014D\021\354\374\227\355\255D\260\026\025\373!\227\313\311bnO\315\356\341v\226\226~\236\237c\364\300\024\223G\230!\263*9\252\205K\275\003;\227]\335D\316\330\312=\037\244#\253\211\343\020x\270\rnLb\254\256\210\t\371F,\r\361\031\350Jb\340$\031L\252\277[4\37431Ko@O\236\362\351\207\266\250|)Q\357\373R\225\032\215Mhe\214,\026\216\242\322\326$\341W\r\270\026\322\311\n\230?\231\330\251\365\202E3\220\305\\G\322\"\366\230\275\347\213\347\362\265~\355?\014\212W\324";
     PyObject *data = __Pyx_DecompressString(cstring, 167, 1);
     if (unlikely(!data)) __PYX_ERR(0, 1, __pyx_L1_error)
