@@ -2,7 +2,7 @@
 Utilities for working with the file system: creating/removing/listing folders, comparing folders and files, working with zip archives.
 """
 
-from . import general, string, funcargparse
+from . import general, string, funcargparse, functions
 
 import os
 import sys
@@ -277,6 +277,9 @@ def _handleRemoveReadonly(func, path, exc):
         func(path)
     else:
         raise  # pylint: disable=misplaced-bare-raise
+def _rmtree(*args, **kwargs):
+    kwargs=functions.rename_args(shutil.rmtree,{"onerror":"onexc"},**kwargs)
+    return shutil.rmtree(*args,**kwargs)
 def remove_dir(path, error_on_file=True):
     """
     Remove the folder recursively if it exists.
@@ -293,7 +296,7 @@ def remove_dir(path, error_on_file=True):
                     if not os.path.exists(path):
                         return True
         for _ in range(10):
-            shutil.rmtree(path,ignore_errors=False,onerror=_handleRemoveReadonly)
+            _rmtree(path,ignore_errors=False,onexc=_handleRemoveReadonly)
             if not os.path.exists(path):
                 return True
     else:
