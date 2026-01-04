@@ -10,6 +10,7 @@ Subpackages
    pylablib.devices.AWG
    pylablib.devices.Agilent
    pylablib.devices.AlliedVision
+   pylablib.devices.AmericanMagnetics
    pylablib.devices.Andor
    pylablib.devices.Arcus
    pylablib.devices.Arduino
@@ -23,6 +24,7 @@ Subpackages
    pylablib.devices.ElektroAutomatik
    pylablib.devices.HighFinesse
    pylablib.devices.Hubner
+   pylablib.devices.IDS
    pylablib.devices.IMAQ
    pylablib.devices.IMAQdx
    pylablib.devices.KJL
@@ -46,6 +48,7 @@ Subpackages
    pylablib.devices.Photometrics
    pylablib.devices.PhotonFocus
    pylablib.devices.PhysikInstrumente
+   pylablib.devices.PicoTech
    pylablib.devices.PrincetonInstruments
    pylablib.devices.Rigol
    pylablib.devices.SiliconSoftware
@@ -67,7 +70,7 @@ Module contents
 ---------------
 
 .. automodule:: pylablib.devices
-   :members:
    :inherited-members:
-   :undoc-members:
+   :members:
    :show-inheritance:
+   :undoc-members:
