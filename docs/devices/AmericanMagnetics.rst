@@ -19,7 +19,7 @@ Model 1700 provides a bare RS232 interface (which should work with any appropria
 Connection
 -----------------------
 
-The device is identified either using a COM port (when RS232 port with an appropriate USB adapter is used), or a network address and a port (the default port 7180 is used unless explicitly specifed). For the COM port, all you need to know is their COM-port address (e.g., ``COM5``)::
+The device is identified either using a COM port (when RS232 port with an appropriate USB adapter is used), or a network address and a port (the default port 7180 is used unless explicitly specified). For the COM port, all you need to know is their COM-port address (e.g., ``COM5``)::
 
     >> from pylablib.devices import AmericanMagnetics
     >> sensor = AmericanMagnetics.AM1700("COM5")

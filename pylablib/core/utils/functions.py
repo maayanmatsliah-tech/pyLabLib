@@ -599,7 +599,7 @@ def delaydef(gen):
 
 ##### Method argument rename handling #####
 def hasarg(f, **names):
-    """Check if all of these parameter names are present maong the function arguments"""
+    """Check if all of these parameter names are present among the function arguments"""
     args=inspect.signature(f).parameters
     return all(n in args for n in names)
 
@@ -607,7 +607,7 @@ def rename_args(_f, _alias, **kwargs):
     """
     Rename all the supplied parameters according to the alias table, if not present in the function signature.
 
-    `_alias` is a dictionary ``{provided: replacement}`` which maps provided names ont possible replacement names.
+    `_alias` is a dictionary ``{provided: replacement}`` which maps provided names onto possible replacement names.
     """
     args=inspect.signature(_f).parameters
     return {(n if n in args else _alias.get(n,n)):v for n,v in kwargs.items()}
