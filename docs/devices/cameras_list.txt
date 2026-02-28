@@ -1,4 +1,5 @@
 - :ref:`Andor SDK2 <cameras_andor_sdk2>` and :ref:`Andor SDK3 <cameras_andor_sdk3>`: variety of Andor (currently part of Oxford Instruments) cameras. Tested with Andor iXon, Luca, Newton, Zyla, Neo and Marana.
+- :ref:`Allied Vision <cameras_allvis>`: Allied Vision VimbaX-compatible cameras. Tested with Bonito Allied Vision 1800 U-052m camera.
 - :ref:`Allied Vision Bonito <cameras_allvis>` cameras: CameraLink-interfaced cameras. Tested with Bonito CL-400B/C and NI IMAQ frame grabber.
 - :ref:`Basler <cameras_basler>`: Basler pylon-compatible cameras. Tested with an emulated Basler camera.
 - :ref:`BitFlow <cameras_bitflow>`: BitFlow Axion family frame grabbers. Tested with BitFlow Axion 1xB frame grabber together with PhotonFocus MV-D1024E camera.

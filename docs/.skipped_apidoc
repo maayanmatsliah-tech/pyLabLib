@@ -5,6 +5,8 @@
 ..\pylablib\aux_libs.py
 ..\pylablib\core\utils\ctypes_tools.py
 ..\pylablib\core\devio\hid_lib.py
+..\pylablib\devices\AlliedVision\VmbC_defs.py
+..\pylablib\devices\AlliedVision\VmbC_lib.py
 ..\pylablib\devices\Andor\atcore_defs.py
 ..\pylablib\devices\Andor\atcore_lib.py
 ..\pylablib\devices\Andor\atmcd32d_defs.py
@@ -53,6 +55,7 @@
 ..\pylablib\devices\uc480\uc480_lib.py
 ..\pylablib\devices\Windows\winmm_lib.py
 ..\pylablib\core\dataproc\ctransform.c
+..\pylablib\devices\AlliedVision\utils.c
 ..\pylablib\devices\Andor\utils.c
 ..\pylablib\devices\Basler\utils.c
 ..\pylablib\devices\IMAQdx\utils.c

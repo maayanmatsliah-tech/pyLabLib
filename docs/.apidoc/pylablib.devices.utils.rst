@@ -22,6 +22,15 @@ pylablib.devices.utils.load\_lib module
    :show-inheritance:
    :undoc-members:
 
+pylablib.devices.utils.pixel\_format module
+-------------------------------------------
+
+.. automodule:: pylablib.devices.utils.pixel_format
+   :inherited-members:
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
 Module contents
 ---------------
 
