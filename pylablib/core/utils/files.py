@@ -271,7 +271,7 @@ def ensure_dir(path, error_on_file=True):
         ensure_dir_singlelevel(os.path.join(*dirs[:i+1]),error_on_file=error_on_file)
         
 def _handleRemoveReadonly(func, path, exc):
-    excvalue = exc[1]
+    excvalue=exc[1] if isinstance(exc,tuple) else exc
     if func in (os.rmdir,os.remove,os.unlink) and excvalue.errno==errno.EACCES:
         os.chmod(path,stat.S_IRWXU|stat.S_IRWXG|stat.S_IRWXO) # 0777
         func(path)
