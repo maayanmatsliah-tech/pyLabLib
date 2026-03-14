@@ -20,6 +20,7 @@ Currently supported cameras:
     Basler
     BitFlow
     DCAM
+    IDS
     IMAQ
     IMAQdx
     PhotonFocus

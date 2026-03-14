@@ -22,6 +22,8 @@
 ..\pylablib\devices\DCAM\dcamprop_defs.py
 ..\pylablib\devices\HighFinesse\wlmData_defs.py
 ..\pylablib\devices\HighFinesse\wlmData_lib.py
+..\pylablib\devices\IDS\peak_backend_defs.py
+..\pylablib\devices\IDS\peak_backend_lib.py
 ..\pylablib\devices\IMAQ\niimaq_defs.py
 ..\pylablib\devices\IMAQ\niimaq_lib.py
 ..\pylablib\devices\IMAQdx\NIIMAQdx_defs.py
@@ -58,6 +60,7 @@
 ..\pylablib\devices\AlliedVision\utils.c
 ..\pylablib\devices\Andor\utils.c
 ..\pylablib\devices\Basler\utils.c
+..\pylablib\devices\IDS\utils.c
 ..\pylablib\devices\IMAQdx\utils.c
 ..\pylablib\devices\PCO\utils.c
 ..\pylablib\devices\SiliconSoftware\utils.c
