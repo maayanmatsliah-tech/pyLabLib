@@ -392,7 +392,7 @@ class KinesisDevice(IMultiaxisStage,BasicKinesisDevice):
         If ``sync==True``, wait until homing is done (with the given timeout).
         If ``force==False``, only home if the device isn't homed already.
         """
-        if self._is_homed() and not force:
+        if self._is_homed(channel=channel) and not force:
             return
         self.send_comm(0x0443,self._make_channel(channel),dest=("channel",channel))
         if sync:
@@ -1211,7 +1211,7 @@ class KinesisMotor(KinesisDevice):
             self._add_settings_variable("limit_switch_parameters",self.get_limit_switch_parameters,self.setup_limit_switch)
         else:
             self._add_settings_variable("polctl_parameter",self.get_polctl_parameters,self.setup_polctl)
-        if self._model in ["KDC101","KST101","KBD101"]:
+        if self._model in ["KDC101","KST101","KST201","KBD101"]:
             if self._model!="KST101":
                 self._add_settings_variable("kcube_trigio_parameters",self.get_kcube_trigio_parameters,self.setup_kcube_trigio)
             self._add_settings_variable("kcube_trigpos_parameters",self.get_kcube_trigpos_parameters,self.setup_kcube_trigpos)
@@ -1279,7 +1279,7 @@ class KinesisMotor(KinesisDevice):
                 return 25600/360,"deg"
             if stage=="NR360":
                 return 25600/(360/66),"deg"
-        if self._model in ["TST101","KST101","MST602","K10CR1"] or self._model.startswith("BSC20") or self._model.startswith("SSC20"):
+        if self._model in ["TST101","KST101","KST201","MST602","K10CR1"] or self._model.startswith("BSC20") or self._model.startswith("SSC20"):
             if stage.startswith("ZST"):
                 return 2008645.63E3,"m"
             if stage.startswith("ZFS"):
@@ -1317,7 +1317,7 @@ class KinesisMotor(KinesisDevice):
             return (ssc,ssc*time_conv*2**16,ssc*time_conv**2*2**16),units
         if self._model in ["TST001","MST601"] or self._model.startswith("BSC00") or self._model.startswith("BSC10") or self._model.startswith("MPC"):
             return (ssc,ssc,ssc),units
-        if self._model in ["TST101","KST101","MST602","K10CR1"] or self._model.startswith("BSC20"):
+        if self._model in ["TST101","KST101","KST201","MST602","K10CR1"] or self._model.startswith("BSC20"):
             vpr=53.68
             avr=204.94E-6
             return (ssc,ssc*vpr,ssc*vpr*avr),units
